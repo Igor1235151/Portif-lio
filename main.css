@@ -1,0 +1,105 @@
+:root {
+    --Cor_principal: #FFD700;
+    --Cor_principal_hover: #cdaf01;
+    --Cor_principal_active: #8c7701;
+    --Cor_fundo: black;
+    --Cor_texto: white;
+}
+
+.theme-light {
+    --Cor_principal: blue;
+    --Cor_principal_hover: rgb(136, 136, 255);
+    --Cor_principal_active: rgb(98, 98, 255);
+    --Cor_fundo: white;
+    --Cor_texto: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--Cor_fundo);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--Cor_principal_hover);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--Cor_principal_active);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--Cor_fundo);
+}
+
+a {
+    color: var(--Cor_principal);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--Cor_principal_hover);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--Cor_principal_active);
+}
+
+nav {
+    width: 100%;
+    background-color: var(--Cor_fundo);
+    color: var(--Cor_principal);
+    padding: 10px;
+    border-bottom: 1px solid var(--Cor_principal);
+    position: fixed;
+}
+
+.navbar-custom {
+    background-color: var(--Cor_fundo);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: var(--Cor_principal);
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: var(--Cor_principal);
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: var(--Cor_principal);
+}
+
+.carousel-inner {
+    max-height: 500px;
+}
+
+.navbar-toggler {
+    border: 1px solid var(--Cor_principal);
+    color: var(--Cor_principal);
+}
+
+.fa-bars {
+    margin-top: 5px;
+}
+
+footer {
+    border-top: 1px solid var(--Cor_principal);
+    padding-top: 10px;
+    color: var(--Cor_texto);
+}
+
+footer h5 {
+    color: var(--Cor_principal);
+}
+
+footer a {
+    color: var(--Cor_texto);
+}
